@@ -7,30 +7,33 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<main>
-		<h1>Página para practicar Eventos de JavaScript</h1>
-		<h2>Haz click para elegir el color:</h2>
+	<main class="principal">
+		<h1 class="title">Página para practicar Eventos de JavaScript</h1>
 		<div class="popup">
-			<p>Si posas tu cursor sobre los colores, podrás ver una previsualización :)</p>
+			<p class="popup--text">Llevas mucho tiempo sin elegir ningún color... Si haces click sobre alguno de ellos podrás aplicarlo y si pasas el ratón sobre ellos verás como queda antes de hacerlo. Además, si quieres que recupere su color original haz click en "Reset" :)</p>
 		</div>
-		<div class="popup">Llevas mucho tiempo sin elegir ningún color... Si haces click sobre alguno de ellos podrás aplicarlo y si pasas el ratón sobre ellos verás como queda antes de hacerlo. Además, si quieres que recupere su color original haz click en "Reset" :)</div>
-		<ul>
-			<li>
-				<button type="button" class="button"></button>
-			</li>
-			<li>
-				<button type="button" class="button"></button>
-			</li>
-				<button type="button" class="button"></button>
-			<li>
-				<button type="button" class="button"></button>
-			</li>
-			<li>
-				<button type="button" class="button"></button>
-			</li>
-		</ul>
-		<button type="button" class="button">Reset</button>
-		<div class="circunference">
+		<div class="container container--choose">
+			<h2>Haz click para elegir el color:</h2>
+			<ul class="choose-color">
+				<li class="color">
+					<button type="button" class="button color--lightgreen"></button>
+				</li>
+				<li class="color">
+					<button type="button" class="button color--lightblue"></button>
+				</li>
+				<li class="color">
+					<button type="button" class="button color--lightpink"></button>
+				</li>
+				<li class="color">
+					<button type="button" class="button  color--lightyellow"></button>
+				</li>
+			</ul>
+			<div class="container--reset">
+				<button type="button" class="button button--reset">Reset</button>
+			</div>
+		</div>
+		<div class="container container--circunference">
+			<div class="circunference"></div>
 		</div>
 	</main>
 	<script type="text/javascript" src="js/main.js"></script>

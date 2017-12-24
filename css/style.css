@@ -1,0 +1,78 @@
+/*bloque principal*/
+.principal {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.title {
+	width: 100%;
+	text-align: center;
+}
+.container {
+	width: 50%;
+	text-align: center;
+}
+/*Elección de colores*/
+.choose-color{
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 60%;
+	margin: 30px auto;
+}
+.color{
+	width: 50px;
+	height: 50px;
+}
+.color--lightgreen{
+	background-color: lightgreen;
+}
+.color--lightblue{
+	background-color: lightblue;
+}
+.color--lightpink{
+	background-color: lightpink;
+}
+.color--lightyellow{
+	background-color: lightyellow;
+}
+
+.button {
+	width: 50px;
+	height: 50px;
+}
+/*botón reset*/
+.container--reset {
+	text-align: center;
+}
+.button--reset{
+	width: 200px;
+	height: 30px;
+	border-radius: 10px;
+	background-color: orange;
+	color: black;
+	font-weight: bold;
+	align-self: center;
+}
+/*circunferencia*/
+.circunference {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background-color: grey;
+	margin: auto;
+}
+/*Pop-up*/
+.hidden {
+	display: none;
+}
+.popup{
+	width: 80%;
+	-webkit-box-shadow: 10px 12px 28px -7px rgba(0,0,0,0.46);
+	-moz-box-shadow: 10px 12px 28px -7px rgba(0,0,0,0.46);
+	box-shadow: 10px 12px 28px -7px rgba(0,0,0,0.46);
+	border-radius: 10px;
+	background-color: orange;
+	}
