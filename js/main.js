@@ -20,10 +20,14 @@ function addListeners (){
 }
 addListeners();
 
-//Popup que desaparece pasados 30 segundos.
+//Popup que desaparece cuando se hace un movimiento con el ratón sobre la caja de los colores.
 
 function disappearPopup() {
 	popup.classList.add('hidden');
 }
-
 container.addEventListener('mousemove', disappearPopup);
+//si hace más de 40 segundos que no pasas por ahí el popup vuelve a aparecer con setTimeout
+function appearPopup() {
+	popup.classList.remove('hidden');
+}
+setTimeout(appearPopup, 40000);
