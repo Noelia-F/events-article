@@ -5,6 +5,7 @@ var info = document.querySelector('.container--info');
 var buttonInfo = document.querySelector('.button--info');
 var close = document.querySelector('.container--close');
 var buttonClose = document.querySelector('.button--close');
+var container = document.querySelector('.container--choose');
 function changeColor(){
 	//cambiar color
 	var computedStyle = getComputedStyle(this);
@@ -25,27 +26,4 @@ function disappearPopup() {
 	popup.classList.add('hidden');
 }
 
-//aparece un botón para acceder de nuevo a la información del popup.
-
-function appearButton() {
-	info.classList.remove('hidden');
-}
-
-//posibilidad de hacer click y que aparezca de nuevo la información
-function appearPopup() {
-	popup.classList.remove('hidden');
-	info.classList.add('hidden');
-	close.classList.remove('hidden');
-}
-
-//cerrar el popup con la información de cómo se juega
-function closePopup() {
-	popup.classList.add('hidden');
-	info.classList.remove('hidden');
-	close.classList.add('hidden');
-}
-setTimeout(disappearPopup, 3000);
-setTimeout(appearButton, 3000);
-console.log(buttonInfo);
-buttonInfo.addEventListener('click', appearPopup);
-buttonClose.addEventListener('click', closePopup);
+container.addEventListener('mousemove', disappearPopup);
