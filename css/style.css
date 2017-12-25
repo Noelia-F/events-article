@@ -49,7 +49,7 @@
 .container--reset {
 	text-align: center;
 }
-.button--reset{
+.button--reset, .button--info, .button--close{
 	width: 200px;
 	height: 30px;
 	border-radius: 10px;
@@ -79,4 +79,10 @@
 	background-color: orange;
 	margin-bottom: 30px;
 	text-align: center;
+	padding: 10px;
 	}
+.container--info, .container--close {
+	width: 100%;
+	text-align: center;
+	margin: 10px auto;
+}
