@@ -8,7 +8,7 @@ var info = document.querySelector('.container--info');
 var buttonInfo = document.querySelector('.button--info');
 var close = document.querySelector('.container--close');
 var buttonClose = document.querySelector('.button--close');
-var container = document.querySelector('.container--choose');
+var container = document.querySelector('.color');
 
 
 function changeColor(){
